@@ -5,7 +5,7 @@ import { View, Image, Text } from 'react-native';
 class HomeScreen extends Component {
     render() {
         return (
-            <View style={{ marginTop: 0, flex: 1, justifyContent: 'center', alignItems: 'center', fontWeight: 'bold' }}>
+            <View style={{ marginTop: 1, flex: 1, justifyContent: 'center', alignItems: 'center', fontWeight: 'bold' }}>
                 <Image
                     source={require('../assets/smiley.png')} style={{width: 200, height: 200}}
                 />
