@@ -1,28 +1,25 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, Button} from 'react-native';
-import PharmacyListContainer from "../containers/PharmacyListContainer";
+import {createStackNavigator} from '@react-navigation/stack';
+import PharmacyListScreen from "./PharmacyListScreen";
+import PharmacyScreen from "./PharmacyScreen";
 
+
+
+const Stack = createStackNavigator();
 
 class SearchScreen extends Component {
     render() {
-        const {navigation} = this.props;
+
         return (
-            <View style={{flex: 1, justifyContent: 'center', alignItems: 'center', marginTop: 150}}>
 
-                <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
-                <Button title="Go back" onPress={() => navigation.goBack()} />
-                <Button
-                    title='Rechercher'
-                    onPress={() =>
-                        navigation.navigate('')}
-                />
-                <PharmacyListContainer/>
+            <Stack.Navigator>
+                <Stack.Screen name='PharmacyListScreen' component={PharmacyListScreen}/>
+                <Stack.Screen name='PharmacyScreen' component={PharmacyScreen}/>
+            </Stack.Navigator>
 
-            </View>
 
         );
     }
 }
-
 
 export default SearchScreen;
