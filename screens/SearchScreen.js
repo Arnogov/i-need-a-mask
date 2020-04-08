@@ -4,7 +4,6 @@ import PharmacyListScreen from "./PharmacyListScreen";
 import PharmacyScreen from "./PharmacyScreen";
 
 
-
 const Stack = createStackNavigator();
 
 class SearchScreen extends Component {
@@ -13,8 +12,8 @@ class SearchScreen extends Component {
         return (
 
             <Stack.Navigator>
-                <Stack.Screen name='PharmacyListScreen' component={PharmacyListScreen}/>
-                <Stack.Screen name='PharmacyScreen' component={PharmacyScreen}/>
+                <Stack.Screen name='Rechercher' component={PharmacyListScreen}/>
+                <Stack.Screen name='PharmacyScreen' options={{title:'Pharmacie'}} component={PharmacyScreen}/>
             </Stack.Navigator>
 
 

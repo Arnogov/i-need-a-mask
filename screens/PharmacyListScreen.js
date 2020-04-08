@@ -7,8 +7,6 @@ class PharmacyListScreen extends Component {
         const {navigate} = this.props.navigation;
         return (
             <View>
-                <Text style={{ color: 'black', fontSize: 30, textAlign: 'center'}}>Rechercher les pharmacies</Text>
-
                 <PharmacyListContainer navigate={navigate}/>
             </View>
         );

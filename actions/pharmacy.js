@@ -3,7 +3,7 @@ export const FETCH_PHARMACIES_SUCCESS = 'FETCH_PHARMACIES_SUCCESS';
 export const FETCH_PHARMACIES_FAILURE = 'FETCH_PHARMACIES_FAILURE';
 
 export function fetchPharmacies() {
-    return function(dispatch) {
+    return function (dispatch) {
         dispatch(fetchPharmaciesRequest());
         return fetch('http://192.168.1.80:4000/pharmacies')
             .then(
@@ -17,14 +17,14 @@ export function fetchPharmacies() {
 }
 
 export function fetchPharmaciesRequest() {
-    return { type: FETCH_PHARMACIES_REQUEST };
+    return {type: FETCH_PHARMACIES_REQUEST};
 }
 
 export function fetchPharmaciesSuccess(pharmacies) {
-    return { type: FETCH_PHARMACIES_SUCCESS, payload: pharmacies};
+    return {type: FETCH_PHARMACIES_SUCCESS, payload: pharmacies};
 }
 
 export function fetchPharmaciesFailure(error) {
-    return { type: FETCH_PHARMACIES_FAILURE, payload: error };
+    return {type: FETCH_PHARMACIES_FAILURE, payload: error};
 }
 
