@@ -7,7 +7,6 @@ class PharmacyList extends Component {
 
     render() {
         const {
-            navigation,
             pharmacies,
             loading,
         } = this.props;
@@ -17,7 +16,7 @@ class PharmacyList extends Component {
         }
 
         return (
-            <View style={{marginTop: 50}}>
+            <View style={{marginTop: 50, marginBottom: 50}}>
 
                 <Button title='Rechercher' onPress={() => this.props.fetchPharmacies()}/>
                 <FlatList data={pharmacies}

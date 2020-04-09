@@ -6,7 +6,7 @@ class PharmacyListScreen extends Component {
     render() {
         const {navigate} = this.props.navigation;
         return (
-            <View>
+            <View style={{ padding: 25}}>
                 <PharmacyListContainer navigate={navigate}/>
             </View>
         );
