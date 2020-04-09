@@ -6,13 +6,16 @@ class AddScreen extends Component {
 
     render() {
         return (
-            <ScrollView style={{padding: 25}}>
-                <Text style={{color: 'black', fontSize: 25, textAlign: 'center', marginBottom: 40}}>
-                    Ajouter une pharmacie
-                </Text>
-                <View style={{borderColor: 'black', fontSize: 15, marginBottom: 10}}>
-                    <PharmacyFormContainer/>
+            <ScrollView>
+                <View style={{padding: 20}}>
+                    <Text style={{color: 'black', fontSize: 50, textAlign: 'center', marginBottom: 20}}>
+                        Ajouter une pharmacie
+                    </Text>
+                    <View style={{height: 40, marginBottom: 20}}>
+                        <PharmacyFormContainer/>
+                    </View>
                 </View>
+
             </ScrollView>
         );
     }
