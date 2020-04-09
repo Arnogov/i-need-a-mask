@@ -4,7 +4,6 @@ import {View, TextInput, Text, TouchableOpacity, ActivityIndicator, FlatList, Bu
 class PharmacyList extends Component {
 
 
-
     render() {
         const {
             pharmacies,
@@ -19,16 +18,19 @@ class PharmacyList extends Component {
             <View style={{marginTop: 50, marginBottom: 50}}>
 
                 <Button title='Rechercher' onPress={() => this.props.fetchPharmacies()}/>
-                <FlatList data={pharmacies}
-                          renderItem={({item}) =>
-                              <Button
-                                  title={item.name}
-                                  onPress={() =>
-                                      this.props.navigate('PharmacyScreen', {pharmacy:item})
-                                  }>
-                              </Button>}
-                          keyExtractor={item => item._id}
-                />
+
+                <View style={{marginTop: 50, marginBottom: 50}}>
+                    <FlatList data={pharmacies}
+                              renderItem={({item}) =>
+                                  <Button
+                                      title={item.name}
+                                      onPress={() =>
+                                          this.props.navigate('PharmacyScreen', {pharmacy: item})
+                                      }>
+                                  </Button>}
+                              keyExtractor={item => item._id}
+                    />
+                </View>
             </View>
         );
     }

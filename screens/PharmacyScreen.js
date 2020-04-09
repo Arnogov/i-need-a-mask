@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, FlatList, View, Text} from "react-native";
+import {View} from "react-native";
 import PharmacyItemContainer from "../containers/PharmacyItemContainer";
 
 class PharmacyScreen extends Component {
