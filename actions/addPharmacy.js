@@ -28,7 +28,7 @@ export function addPharmacyRequest() {
 }
 
 export function addPharmacySuccess(pharmacy) {
-    return {type: ADD_PHARMACY_SUCCESS, payload: {pharmacy: pharmacy}};
+    return {type: ADD_PHARMACY_SUCCESS, payload: pharmacy};
 }
 
 export function addPharmacyFailure(error) {
