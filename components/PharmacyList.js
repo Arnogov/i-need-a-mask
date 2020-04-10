@@ -1,6 +1,14 @@
 import React, {Component} from 'react';
-import {View, ActivityIndicator, FlatList, Button} from 'react-native';
+import {View, ActivityIndicator, FlatList} from 'react-native';
+import {ThemeProvider,Button} from 'react-native-elements';
 
+const theme = {
+        Button: {
+        titleStyle: {
+            color: 'black',
+        },
+    },
+};
 
 
 class PharmacyList extends Component {
@@ -27,13 +35,17 @@ class PharmacyList extends Component {
                         ItemSeparatorComponent={() => <View style={{width: 10, height: 10}}/>}
                         data={pharmacies}
                         renderItem={({item}) =>
+                            <ThemeProvider theme={theme}>
                             <Button
-                                color='lightblue'
+                                buttonStyle={{
+                                    backgroundColor:'lightblue'}}
+                                icon={{name: 'local-pharmacy'}}
                                 title={item.name}
                                 onPress={() =>
                                     this.props.navigate('PharmacyScreen', {pharmacy: item})
                                 }>
-                            </Button>}
+                            </Button>
+                            </ThemeProvider>}
                         keyExtractor={item => item._id}
                     />
                 </View>

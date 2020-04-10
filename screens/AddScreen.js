@@ -8,13 +8,13 @@ class AddScreen extends Component {
         return (
 
             <ScrollView
-                behaviour = "height"
-                contentContainerStyle={{ flexGrow: 1 }}>
+                behaviour="height"
+                contentContainerStyle={{flexGrow: 1}}>
                 <View style={{padding: 20}}>
                     <View>
-                    <Text style={{color: 'black', fontSize: 50, textAlign: 'center', marginBottom: 20}}>
-                        Ajouter une pharmacie
-                    </Text>
+                        <Text style={{color: 'black', fontSize: 50, textAlign: 'center', marginBottom: 20}}>
+                            Ajouter une pharmacie
+                        </Text>
                     </View>
                     <View style={{height: 40, marginBottom: 20}}>
                         <PharmacyFormContainer/>

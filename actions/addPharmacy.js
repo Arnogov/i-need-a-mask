@@ -24,13 +24,13 @@ export function addPharmacy(pharmacy) {
 }
 
 export function addPharmacyRequest() {
-    return { type: ADD_PHARMACY_REQUEST }
+    return {type: ADD_PHARMACY_REQUEST}
 }
 
 export function addPharmacySuccess(pharmacy) {
-    return { type: ADD_PHARMACY_SUCCESS, payload: { pharmacy: pharmacy} };
+    return {type: ADD_PHARMACY_SUCCESS, payload: {pharmacy: pharmacy}};
 }
 
 export function addPharmacyFailure(error) {
-    return { type: ADD_PHARMACY_FAILURE, payload: error };
+    return {type: ADD_PHARMACY_FAILURE, payload: error};
 }

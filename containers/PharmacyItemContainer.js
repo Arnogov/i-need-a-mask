@@ -1,4 +1,4 @@
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import PharmacyItem from '../components/PharmacyItem';
 import {fetchPharmacies} from "../actions/pharmacy";
 

@@ -1,5 +1,5 @@
-import { connect } from 'react-redux';
-import { addPharmacy } from '../actions/addPharmacy';
+import {connect} from 'react-redux';
+import {addPharmacy} from '../actions/addPharmacy';
 import PharmacyForm from '../components/PharmacyForm';
 
 

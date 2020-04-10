@@ -23,7 +23,7 @@ class PharmacyForm extends Component {
 
     render() {
         return (
-            <View style={{flexGrow : 1}}>
+            <View style={{flexGrow: 1}}>
                 <Text style={{marginBottom: 10, fontSize: 20}}>Nom</Text>
                 <TextInput value={this.state.name} onChangeText={text => this.setState({name: text})}
                            style={{
@@ -69,7 +69,7 @@ class PharmacyForm extends Component {
                                justifyContent: 'center',
                                marginBottom: 20
                            }}/>
-                    <Button title='Enregistrer' onPress={() => this.onSubmit()}/>
+                <Button title='Enregistrer' onPress={() => this.onSubmit()}/>
 
             </View>
 

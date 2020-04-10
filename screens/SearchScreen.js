@@ -13,7 +13,7 @@ class SearchScreen extends Component {
 
             <Stack.Navigator>
                 <Stack.Screen name='Rechercher' component={PharmacyListScreen}/>
-                <Stack.Screen name='PharmacyScreen' options={{title:'Pharmacie'}} component={PharmacyScreen}/>
+                <Stack.Screen name='PharmacyScreen' options={{title: 'Pharmacie'}} component={PharmacyScreen}/>
             </Stack.Navigator>
 
 

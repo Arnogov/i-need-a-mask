@@ -15,11 +15,11 @@ const initialState = {
 };
 
 function pharmacy(state = initialState, action) {
-    switch(action.type) {
+    switch (action.type) {
         case FETCH_PHARMACIES_REQUEST:
-            return { ...state, loading: true };
+            return {...state, loading: true};
         case ADD_PHARMACY_REQUEST:
-            return { ...state, loading: true };
+            return {...state, loading: true};
         case FETCH_PHARMACIES_SUCCESS:
             return {
                 ...state,
@@ -27,12 +27,12 @@ function pharmacy(state = initialState, action) {
                 loading: false
             };
         case ADD_PHARMACY_SUCCESS:
-            return { pharmacies: [...state.pharmacies, action.payload]};
+            return {pharmacies: [...state.pharmacies, action.payload]};
 
         case FETCH_PHARMACIES_FAILURE:
-            return { ...state, error: action.payload, loading: false };
+            return {...state, error: action.payload, loading: false};
         case ADD_PHARMACY_FAILURE:
-            return { ...state, error: action.payload, loading: false };
+            return {...state, error: action.payload, loading: false};
         default:
             return state;
     }
